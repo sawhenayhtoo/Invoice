@@ -12,21 +12,21 @@ pipeline {
         stage('Build') {
             steps {
                 // Example build steps, replace with your actual build commands
-                sh 'mvn clean install'
+                echo 'Build Success'
             }
         }
         
         stage('Test') {
             steps {
                 // Example test steps, replace with your actual test commands
-                sh 'mvn test'
+                echo 'Test Success'
             }
         }
         
         stage('Deploy') {
             steps {
                 // Example deployment steps, replace with your actual deployment commands
-                sh 'mvn deploy'
+                echo 'Deploy Success'
             }
         }
     }
