@@ -2,13 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the source code from Git
-                git 'https://github.com/sawhenayhtoo/Invoice.git'
-            }
-        }
-        
         stage('Build') {
             steps {
                 // Example build steps, replace with your actual build commands
